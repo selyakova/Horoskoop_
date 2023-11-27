@@ -100,19 +100,19 @@
     <AndroidResource Include="Resources\drawable\skorpion.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\vähk.jpg" />
+    <AndroidResource Include="Resources\drawable\vahk.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\sõnn.jpg" />
+    <AndroidResource Include="Resources\drawable\sonn.jpg" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\kaalud.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\lõvi.jpg" />
+    <AndroidResource Include="Resources\drawable\lovi.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\jäär.jpg" />
+    <AndroidResource Include="Resources\drawable\jaar.jpg" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\kalad.jpg" />

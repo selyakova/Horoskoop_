@@ -13,18 +13,18 @@ namespace Horoskoop
         {
             zodiacSignEntry = new Entry
             {
-                Placeholder = "Введите свой знак зодиака"
+                Placeholder = "Sisestage oma tähhemärk"
             };
 
             calculateButton = new Button
             {
-                Text = "Узнать временной период"
+                Text = "Uuri välja ajavahemik"
             };
             calculateButton.Clicked += OnCalculateButtonClicked;
 
             periodLabel = new Label
             {
-                Text = "Ваш временной период будет отображен здесь",
+                Text = "Teie ajavahemik kuvatakse siin",
                 HorizontalOptions = LayoutOptions.CenterAndExpand,
                 VerticalOptions = LayoutOptions.CenterAndExpand
             };
@@ -34,7 +34,7 @@ namespace Horoskoop
                 Margin = new Thickness(20),
                 Children =
                 {
-                    new Label { Text = "Введите свой знак зодиака:" },
+                    new Label { Text = "Sisestage oma sodiaagimärk:" },
                     zodiacSignEntry,
                     calculateButton,
                     periodLabel
@@ -46,39 +46,39 @@ namespace Horoskoop
         {
             string inputZodiacSign = zodiacSignEntry.Text.Trim();
             string period = GetZodiacPeriod(inputZodiacSign);
-            periodLabel.Text = $"Ваш временной период: {period}";
+            periodLabel.Text = $"Teie ajavahemik: {period}";
         }
 
         private string GetZodiacPeriod(string zodiacSign)
         {
             switch (zodiacSign.ToLower())
             {
-                case "овен":
-                    return "21 марта - 20 апреля";
-                case "телец":
-                    return "21 апреля - 20 мая";
-                case "близнецы":
-                    return "21 мая - 20 июня";
-                case "рак":
-                    return "21 июня - 22 июля";
-                case "лев":
-                    return "23 июля - 22 августа";
-                case "дева":
-                    return "23 августа - 22 сентября";
-                case "весы":
-                    return "23 сентября - 22 октября";
-                case "скорпион":
-                    return "23 октября - 21 ноября";
-                case "стрелец":
-                    return "22 ноября - 21 декабря";
-                case "козерог":
-                    return "22 декабря - 19 января";
-                case "водолей":
-                    return "20 января - 18 февраля";
-                case "рыбы":
-                    return "19 февраля - 20 марта";
+                case "jäär":
+                    return "Märts 21 - Aprill 19";
+                case "sõnn":
+                    return "Aprill 20 – Mai 20";
+                case "kaksikud":
+                    return "Mai 21 – Juuni 21";
+                case "vähk":
+                    return "Juuni 22 – Juuli 22";
+                case "lõvi":
+                    return "Juuli 23 – August 22";
+                case "neitsi":
+                    return "August 23 – September 22";
+                case "kaalud":
+                    return "September 23 – Oktoober 23";
+                case "skorpion":
+                    return "Oktoober 24 – November 22";
+                case "ambur":
+                    return "November 23 – Detsember 21";
+                case "kaljukits":
+                    return "Detsember 22 – Jaanuar 19";
+                case "veevalaja":
+                    return "Jaanuar 20 – Veebruar 18";
+                case "kalad":
+                    return "Veebruar 19 – Märts 20";
                 default:
-                    return "Не удалось определить временной период";
+                    return "Ajavahemikku ei olnud võimalik kindlaks määrata";
             }
         }
     }

@@ -12,7 +12,7 @@ namespace Horoskoop
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class StartPage : ContentPage
     {
-        List<ContentPage> pages = new List<ContentPage>() { new Kuupaev(), new Tahemark() };
+        List<ContentPage> pages = new List<ContentPage>() { new KuupaevPage(), new TahemarkPage() };
 
         List<string> teksts = new List<string> { "Tähemärk kuupäeva järgi", "Kuupäev tähemrgi järgi" };
 
